@@ -1,5 +1,9 @@
 DOCS FOR GYMBRO OS
 
+To move the square, you use the arrow keys. You can place nodes with the respective number on the keyboard.
+To erease a node it is space. To delete all your progress is D. To save your progress its P. To load a file (stored in browser), you press L.
+Formulate your file when loading file like: /gmb/filename.gmb
+
 The counter on the left can be manipulated
 Cell 4 is the unicode of cell 3 + 22. (starts at null, goes up)
 To increment a cell you have to make the little number in the top right be on the correct list item.
@@ -20,5 +24,13 @@ The pointer is a fundamental piece of the puzzle, it moves along from the top le
 Every node moves it, but some do special things with it. The wire node only moves it without side effects.
 It can be turnt and looped and moved using the nodes.
 Whenever the pointer lands on a node, it activates the node, doing the action which is described.
+
+Booleans are used to get user input, at default it is key right. You can switch this with the light green node.
+It goess around the arrows like:
+   - Right (starting point)
+   - Down
+   - Left
+   - Up
+   - back to first
 
 It seems easier than it is (it doesnt seem easy)
