@@ -1,0 +1,24 @@
+DOCS FOR GYMBRO OS
+
+The counter on the left can be manipulated
+Cell 4 is the unicode of cell 3 + 22. (starts at null, goes up)
+To increment a cell you have to make the little number in the top right be on the correct list item.
+Increment or decrement counter number to change that number.
+To increment or decrement the current counter, you use the required nodes for that.
+The counter is used with commands, which are the cyan nodes.
+It takes counter 1, and uses it to find what command to execute.
+It may also use counter 2 to assist. Here is a list:
+ - cmd 1: if it comes from a specific side, it spits out another side. Used for loops.
+     - counter2 = 1 if pointer comes from left, go up else keep going
+     - counter2 = 2 if pointer comes from top, go right else keep going
+     - counter2 = 3 if pointer comes from right, go down else keep going
+     - counter2 = 4 if pointer comes from bottom, go left else keep going
+- cmd 2: add counter4 to counter5, used for typing.
+- cmd 3: replace the counter which is mentioned in counter2 with 0. (if counter2 was 7, counter7 would now be 0)
+
+The pointer is a fundamental piece of the puzzle, it moves along from the top left, and follows your path.
+Every node moves it, but some do special things with it. The wire node only moves it without side effects.
+It can be turnt and looped and moved using the nodes.
+Whenever the pointer lands on a node, it activates the node, doing the action which is described.
+
+It seems easier than it is (it doesnt seem easy)
